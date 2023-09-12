@@ -1,0 +1,30 @@
+.navitem{
+    align-items: center;
+}
+
+#gitlink:hover{
+    opacity: 0.7;
+}
+
+#reportText{
+    justify-items: right;
+    width: 75%;
+}
+
+/*#leftColumn{
+    align-items: top;
+    width: 15%;
+}*/
+
+#leftColumn, #reportText{
+    display:inline-block;
+}
+
+#homepageContent{
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-family: "chill", sans-serif;
+}
