@@ -7,13 +7,14 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -32,7 +33,8 @@
                             Personal Projects
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" target="_blank" href="https://github.com/Evan4456/SpotTheDifferenceSolver">Spot
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://github.com/Evan4456/SpotTheDifferenceSolver">Spot
                                     The Difference Solver</a></li>
                         </ul>
                     </li>
@@ -40,20 +42,149 @@
             </div>
         </div>
     </nav>
-    <div>
-        <h4>Abstract</h4>
-        <p></p>
-        <h4>Information About the Employer</h4>
-        <p>Agnico Eagle is Canadian gold mining company founded in 1957 that has several precious metal mines around the world in countries such as Canada, Australia, Finland and Mexico. The company also has development projects in the United States and Columbia. In addition to gold, the company also produces a large amount of silver, zinc, and copper as by-products of the mining process. </p>
-        <h4>Goals</h4>
-        <p></p>
-        <h4>Job Description</h4>
-        <p>     My Role at Agnico during this work term revolved around one main project. This project was the development of an intranet page for the Business Improvement team. This was to be done using Microsoft’s suite of development tools such as SharePoint, Power Automate and PowerApps. </p>
-        <p>With these tools I created a page that served various purposes for my team. The main one was to create an interactive dictionary of the company’s stat accounts used to build out an Activity based Costing dashboard that the financial teams at each mine site use to monitor and plan the costs of mine operation. </p>
-        <p>I also created tools to define all of the company’s acronyms.</p>
-        <h4>Conclusion</h4>
-        <p></p>
+    <div id="leftColumn" class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <div class="collapse show" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li class="nav-item">
+                    <a class="nav-link" href="#abstract">Abstract</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#employerInfo">Employer Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#goals">Goals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jobDescription">Job Description</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <div id="pageContent" class="offcanvas-lg offcanvas-start">
+        <!--<nav id="leftColumn" class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#abstract">Abstract</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#employerInfo">Employer Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#goals">Goals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#jobDescription">Job Description</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#conclusion">Conclusion</a>
+            </li>
+        </nav>-->
+        <div id="reportText" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <h4 id="abstract">Abstract</h4>
+            <p></p>
+            <h4 id="employerInfo">Information About the Employer</h4>
+            <p>Agnico Eagle is Canadian gold mining company founded in 1957 that has several precious metal mines around
+                the
+                world in countries such as Canada, Australia, Finland and Mexico. The company also has development
+                projects
+                in the United States and Columbia. In addition to gold, the company also produces a large amount of
+                silver,
+                zinc, and copper as by-products of the mining process. </p>
+            <h4 id="goals">Goals</h4>
+            <p>For this work term I had four goals: three technical and one general. The three technical ones were to
+                develop my python scripting skills, improve my proficiency with SQL and to learn the necessary
+                technologies that I would need to create my intranet page. The final, non tech related, skill was to
+                enhance my ability to communicate my ideas, document my work and teach others how to use my technology.
+                To begin with my non-technical learning goal, improving my oral communication. The way in which I did
+                this was by running training sessions to teach my peers how to use some of the technology that I worked
+                on. This was a goal for me since I have never done an instructional presentation before, let alone on
+                technology. There were also certain challenges I found in addition to the novelty of the task like how
+                to cater to people with different technological skill levels as well as people who do not primarily
+                speak English. Due to the varying skill levels of the people in my audience, from people in technical
+                roles who are very tech savvy to mine administration personnel who have far less technical experience,
+                learning how to speak in a way that is clear for everyone, even if I know I am dumbing it down more than
+                some people need was quite difficult. I found myself feeling so worried about sounding condescending to
+                those that did know what they were talking about, that I may not have gone enough in depth for those who
+                did not. Additionally, the fact that my audience was Finnish lead to me producing strong visual aids
+                along with my oral presentation so that the strange technical names for buttons that my audience my not
+                have known would be able to translate over to Finnish more intuitively. Overall, I think I did make good
+                progress on completing this although there were some unanticipated challenges as I mentioned, and I
+                believe my next step is to work on presenting in a way that is accessible to all skill levels.
+                The first technical goal to discuss is to improve my python scripting abilities. The way I worked on
+                this goal was quite simple, I wrote some python. Examples of this are the checking system I created to
+                ensure that all desired accounts from the data set that I am visualizing were present as well as an
+                automated process for drawing the relational hierarchy of the stats. This taught me new things like
+                python graphing libraries like treelib and plotly. Additionally, it gave me the opportunity to learn
+                about different ways to collect and display information in python by collecting data from CSVs and PDFs
+                and learning about things like pandas. This is a goal that I feel quite successful in as a result. I had
+                experience with python already through courses like CIS 2750 and this allowed me to expand my skillset
+                beyond making a get/post request handler to now also being able to parse and display information.
+                The next technical goal I had was to improve my SQL skills. This is something that was also touched on
+                in CIS 2750 but that was with a very small data set. Working at Agnico gave me experience with
+                professional and heavily populated data sets and thus allowed me to expand my SQL querying skills in
+                this new context. I worked with SQL in order to extract specific information on stat accounts to
+                However outside of my learning goals I learned some things that I did not expect. The first of these was
+                the ability to document my work and how to do so in a way slightly different to how I did it at school.
+                In classes when writing code, documentation looked like comments in my code and a readme to explain to
+                Tas how to run my code but in both of these situations I could assume that the person reading it would
+                have a certain amount of technical knowledge and thus the documentation only needed to cover the
+                specific things that I had thought of and could lean on the fact that the TA already knows how to write
+                C or how to use the technologies that I am using, documentation only needed to cover the specifics of my
+                project. However, at Agnico this was not an assumption I could lean on as many of the people I was
+                working with, specifically the users and maintainers of my Intranet site have very little technical
+                knowledge and are not familiar at all with how technologies like SharePoint and PowerApps work. In this
+                situation I had to make a very different kind of documentation that felt more like a user’s manual than
+                what I was used to writing for classes. Despite the practice I have received doing this already, this is
+                not a skill I think I have fully developed as I feel I still sometimes lose my boss when explaining
+                things to her so this is something I will be working on further in the fall.
+                The other thing that I learned outside of my learning goals was how to design solutions and complete
+                tasks with updates in mind. At school I would write the code for a project, hand it in, and then it
+                would be complete with no need to revisit or refactor any of it later. However, at Agnico this is very
+                rarely the case. Requirements for my work changed constantly as things outside of my control are
+                frequently updated and improved. This meant that I needed to learn how to develop solutions that would
+                be flexible and easily changed in the future. At the beginning of the work term this was an issue as I
+                would end up creating things and then the next week, I would be forced to do a ton more work to
+                accommodate changes. An example of this would be when I created a series of PowerApps to display some
+                information relating to the company’s financial accounts, but after I did this, the way that this data
+                needed to be displayed changes and instead of simply being able to change the fields being shown I had
+                to redo a lot of work to accommodate this new change. This led to me repeating a lot of work due to the
+                rigidity of my work. However, across the work term I learned how to create better solutions so that when
+                it came to making a way to display information related to the company’s many acronyms, I was able to
+                create a solution that was adaptable, and I can change in mere minutes as requirements change. This is
+                an extremely valuable skill, and I am very glad I had this experience to learn it.
+            </p>
+            <h4 id="jobDescription">Job Description</h4>
+            <p> My Role at Agnico during this work term revolved around one main project. This project was the
+                development
+                of an intranet page for the Business Improvement team. This was to be done using Microsoft’s suite of
+                development tools such as SharePoint, Power Automate and PowerApps. </p>
+            <p>With these tools I created a page that served various purposes for my team. The main one was to create an
+                interactive dictionary of the company’s stat accounts used to build out an Activity based Costing
+                dashboard
+                that the financial teams at each mine site use to monitor and plan the costs of mine operation.
+                I also created tools to define all of the company’s acronyms.With these tools I created a page that
+                served
+                various purposes for my team. The main one was to create an interactive dictionary of the company’s stat
+                accounts used to build out an Activity based Costing dashboard that the financial teams at each mine
+                site
+                use to monitor and plan the costs of my operation. I also created tools to define all the company’s
+                acronyms. This included an interactive display with all acronyms including a search bar and tools that
+                allows user to add new acronyms and edit the definitions of the existing ones if an error is found.
+                Furthermore, I produced a page for the Maintenance team to display all of their Key Performance
+                Indicators
+                and time classification information. To populate information for the many tools present on these sites I
+                used things such as SQL to query databases.</p>
+            <h4 id="conclusion">Conclusion</h4>
+            <p></p>
 
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
