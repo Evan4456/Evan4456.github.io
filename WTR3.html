@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evan Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg " style="height: 7vh;">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Coop Workterm Reports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cleanerworkReport.html">Coop Workterm Report One (S23)</a></li>
+                            <li><a class="dropdown-item" href="WTR2.html">Coop Workterm Report Two (F23)</a></li>
+                            <li><a class="dropdown-item" href="#"></a>Coop Workterm Report Three (S24)</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Personal Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://github.com/Evan4456/SpotTheDifferenceSolver">Spot
+                                    The Difference Solver</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="row" style="height: 90vh; width: 90vw;">
+        <div class="col-2 p-4">
+            <div id="navLinks" class="list-group">
+                <a class="nav-link" href="#abstract">Abstract</a>
+                <a class="nav-link" href="#employerInfo">Employer Info</a>
+                <a class="nav-link" href="#jobDescription">Job Description</a>
+                <a class="nav-link" href="#goals">Goals</a>
+                <a class="nav-link" href="#conclusion">Conclusion</a>
+            </div>    
+        </div>
+
+        <div class="col-9 p-4 bg-body-tertiary shadow rounded-4">
+            <div data-bs-spy="scroll" data-bs-target="#navLinks" data-bs-smooth-scroll="true" tabindex="0">
+                <div id="header">
+                    <h1>Agnico Eagle Work Term Report 2</h1>
+                    <p>Evan Long</p>
+                    <p>Data Analyst</p>
+                    <p>Summer 2023</p>
+                </div>
+                <div id="abstract">
+                    <h2>Abstract</h2>
+                    <p>During the summer 2024 semester I was working as a Data Analyst at Agnico Eagle Gold. At Agnico I worked with the digital transformation team to build data solutions for departments and mine sites. Including all parts of the data ingestion, transformation and visualization process. BY doing this I was able to complete all three of the goals that I set for myself which were; to be able to create effective ETL pipelines, to be able to transform data for visualization and to improve my oral communication.</p>
+                </div>
+                <div id="employerInfo">
+                    <h2>Employer Information</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Agnico_Eagle_Logo.svg/1200px-Agnico_Eagle_Logo.svg.png" alt="companyLogo" height="20%" width="40%">
+                    <p>Agnico Eagle is Canadian gold mining company founded in 1957 that has several precious metal mines around the world in countries such as Canada, Australia, Finland, Mexico and development projects in the United States and Columbia. In addition to gold, the company also produces a large amount of silver, zinc, and copper as by-products of the mining process.  </p>
+                </div>
+                <div id="jobDescription">
+                    <h2>Job Description</h2>
+                    <p>During the co-op term my responsibilities were those of a data engineer. I worked on the digital transformations team and worked with clients (mine site personnel, corporate employees etc.) to create data solutions that fit their needs. In most cases this meant taking data from a service that the client owned (sql, accessDB, hyperion, JDE ect.) ingesting that data into Azure databricks where I would transform the data, then ingest the transformed data into a visualization tool like PowerBI where I would build visuals to fit the client’s needs. This also included set up all the automated data refreshes and other processes that needed to be automated so that these systems could run smoothly. An example of this would be a health and safety dashboard I created from scratch so that a mine site could keep track of their inspections. I also assisted in retrofitting old data solutions into the company’s newer model. This involved rebuilding and optimizing old elements of the process mentioned above. </p>
+                </div>
+                <div id="goals">
+                    <h2>Goals</h2>
+                    <p>This semester I set three goals for myself, to be able to build full ETL pipelines, to be able to transform raw data for visualization and to improve my verbal communication skills. I feel that I achieved all of these goals this semester.</p>
+                    <h4>Building ETL Pipelines</h4>
+                    <p>The first goal that I set for myself was to become capable of creating full extract, transform, load (ETL) data pipelines as this is an extremely important part of being a data engineer. In previous work terms at Agnico I had worked on the visualization side of data science where I would take data that had already been prepared for me and create visuals for the client so my goal this semester was to be able to take a step back in the process and learn how to complete the ETL pipeline portion of the work as well. I was able to learn this in many different way throughout the term. By first working on fixing individual steps in the pipelines that were broken or needed tweaking I was able to get accustomed to the technologies (Azure ADF, Databricks etc.)   I was then able to tackle creating or recreating individual portions of pipelines (redo the Azure ADF pipeline since the source changed, recreate the Databricks ingestion since the old version was too slow etc..) then I was given the opportunity to create full ETL pipelines from scratch like when I created a full ETL pipeline for a health and safety inspections dashboard for one of the sites where I got the start at the sites data source and build out all the way to the visuals, or when one of the sites was using a fully new database to store their mining info and I got to build an all new ETL pipeline and dashboard for them. These solutions that I created worked quite well and I think are a testament to my success in this goal. </p>
+                    <h4>Transform Data for Visualization</h4>
+                    <p>The second goal I had was that I wanted to be able to prepare raw data for visualization myself. I wanted to understand the techniques and logic behind how a data set is prepared so it could be visualized as (as mentioned above) I have in the past built visuals off prepared data sets before, but I had never taken the step back and prepared the data myself. I was able to this on multiple occasions, some examples of projects I did this on are mentioned above in my previous goal so I will refrain from repeating myself, but I was given a lot of freedom and feedback on my work so that could figure out what techniques were required to prepare data for visualization. I did things like learning when to pivot columns, how to merge table together to create more complete data sets, how to set up filter table for more interactable dashboards and many more techniques. By the end of my semester, I had created many visuals off of data sets I prepared and had gotten lots of positive comments from users and clients on them, so I believe I have achieved this goal. </p>
+                    <h4>Oral Communication</h4>
+                    <p>The final goal that I set for myself this semester was to improve my oral communication skills. This is goal that I think I achieved but I think this skill in general has some way to go to still. In terms of where I was successful, I was able to complete a successful presentation about my work to a group of twenty people, something that I do not think I could have pulled off when I had my first work term last summer. I was also able to effectively communicate with members of my team to collaborate on work and I think I developed a good technical vocabulary to facilitate communication. I also trained one of my colleagues in the technologies my team used to create ETL pipelines and although I think this went well and she developed a good skill set thanks to my help I do not think as smoothly as it could have so I think there is some room improvement for me in being able to communicate to educate. I also had French clients this summer and although I was able to communicate with them well enough to understand all of their requirements and complete a project, they were happy with, my French is very rusty and a good goal for me in the future would be to brush up on my French a little bit. I also think my ability to produce French products (data visuals in French) was acceptable but could be improved. </p>
+                </div>
+                <div id="conclusion">
+                    <h2>Conclusion</h2>
+                    <p>In conclusion, this summer at Agnico developed my two technical goals very well and improved my oral communication skills, I still think there is room for me to improve in the later skill. I am very grateful to my team for being so helpful, teaching me so much and giving me so much incredible feedback to build on. I also am thankful for Julio who knew exactly when to push to learn something on my own and the perfect tips for when I got stuck. I learned a ton because of him and will always be grateful for how much he respected my intelligence and nurtured my passion for learning cool things.  </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
