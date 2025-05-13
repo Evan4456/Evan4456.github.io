@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evan Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg " style="height: 7vh;">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Coop Workterm Reports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cleanerworkReport.html">Coop Workterm Report One (S23)</a></li>
+                            <li><a class="dropdown-item" href="WTR2.html">Coop Workterm Report Two (F23)</a></li>
+                            <li><a class="dropdown-item" href="WTR3.html">Coop Workterm Report Three (S24)</a></li>
+                          <li><a class="dropdown-item" href="#">Coop Workterm Report Four (W25)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Personal Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://github.com/Evan4456/SpotTheDifferenceSolver">Spot
+                                    The Difference Solver</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://github.com/Evan4456/proc_anim_web_background"></a>Procedural Animation (JS)</li>
+                            <li><a class="dropdown-item" target="_blank" 
+                                  href="https://itch.io/jam/brackeys-13/rate/3349361">Late For Shawarma Job (Brackey's Game Jam 2025.1 Submission)</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://github.com/antocade/simon-site">Simon Site</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://github.com/antocade/gdschack">Evil Posture Corrector (2025 GDSC Hacks Submission)</a></li>
+                          
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="row" style="height: 90vh; width: 90vw;">
+        <div class="col-2 p-4">
+            <div id="navLinks" class="list-group">
+                <a class="nav-link" href="#abstract">Abstract</a>
+                <a class="nav-link" href="#employerInfo">Employer Info</a>
+                <a class="nav-link" href="#jobDescription">Job Description</a>
+                <a class="nav-link" href="#goals">Goals</a>
+                <a class="nav-link" href="#conclusion">Conclusion</a>
+            </div>    
+        </div>
+
+        <div class="col-9 p-4 bg-body-tertiary shadow rounded-4">
+            <div data-bs-spy="scroll" data-bs-target="#navLinks" data-bs-smooth-scroll="true" tabindex="0">
+                <div id="header">
+                    <h1>Chicken Farmers of Ontario Work Term 4</h1>
+                    <p>Evan Long</p>
+                    <p>IT Intern</p>
+                    <p>Winter 2025</p>
+                </div>
+                <div id="abstract">
+                    <h2>Abstract</h2>
+                    <p>For my fourth work term I worked at the Chicken Farmers of Ontario (CFO) as an IT Intern. During this time, I along with Fred, developed a new service for the company’s farmer tool. In doing so I made great progress towards all my goals and the next term will bring me the rest of the opportunity I need to round out anything that I hoped to achieve this term that I didn’t quite get to. </p>
+                </div>
+                <div id="employerInfo">
+                    <h2>Employer Information</h2>
+                    <img src="https://www.ontariochicken.ca/cfo/media/Assets/logos/logo.svg" alt="companyLogo" height="20%" width="40%">
+                    <p>Chicken Farmers of Ontario is a non-profit organization that is responsible for the supply management system that the chicken industry in Ontario relies upon. CFO is strictly responsible for farmers that the production of chicken meat and does not deal with the production of chicken eggs. They exist to preserve the production of chicken here in Ontario and to ensure that production matches demand and that costs remain stable for farmers and consumers. They do this by controlling the amount of chicken produced in Ontario, the amount imported into Ontario and also by ensuring that farmers make fair returns. They were founded in 1965 amidst extreme financial instability among chicken farmers in Ontario where production volume had risen dramatically and live cost had dropped in turn. In order to preserve the industry, CFO was founded to regulate the amount of chicken being produced. They still do this today and their methods for determining accurate demand estimates and fair live prices have expanded to using technology to collect information from farmers all over the province. </p> 
+                </div>
+                <div id="jobDescription">
+                    <h2>Job Description</h2>
+                    <p>My job was to work on the information collection system that CFO has created called CFOconnects which links farmers with CFO to provide better accuracy to the work that CFO does. The work I did on this system was to add a new tool for farmers to report their production costs for newly constructed barns. This tool is so that farmers can achieve fair live prices for their chicken given the circumstances of higher production cost incurred by building a new barn. This system uses an SAP backend and a frontend written in JavaScript that uses an SAP a UI library specially for interfacing with SAP called SAPUI5. The new tool I created along with the help of my coworker Fred involved creating tables and methods in SAP using ABAP and the SAP GUI as well as creating an extremely custom front end page for farmers to enter their information into. </p>
+                </div>
+                <div id="goals">
+                    <h2>Goals</h2>
+                    <p>I had three goals for this work term. The first was to become proficient with SAPUI5 as I had never used it before nor had I ever done any front end development professionally before. This is a goal that I feel I was quite successful in as I was able to create quite a complicated product with very little guidance and now as the project moves into testing there have been very minimal bugs found. I am proud that I was able to produce such a complete project with only a few simple references and a couple questions to my coworkers. </p>
+                    <p>The second goal that I had was to become proficient as writing ABAP code for SAP this is a goal that I think I made good progress towards but would not consider complete like with the first goal as the majority of the work that needed to be done for the barn cost survey project was done with SAPUI5 and JavaScript I did not actually do a ton of ABAP programming. This is not to say that I didn’t do any or that the time I spent with SAP was not successful but it was not as expansive as the time I spent on the frontend. SAP is also an extremely opaque, dense and archaic system that seems to try its absolute hardest to keep you from understanding how to use it. From its ridiculous “t-code” navigation system to its antiquated GUI, SAP seems to exist so that younger developers can look at it and relish in that fact that better solutions exist. </p>
+                    <p>The Third goal I had was to be able to capably parse the requirements given to me by the business and gain the ability to ask proper questions to gain a full understanding of what the user wants. This is something I think I did well as I have created this new tool in a way that fully matches the requirements laid out for me and I was able to fill in the blanks adeptly in a way that the stakeholders in the project agreed with.  I will also be getting more feedback on how well I did at this goal in my next work term as this project moves to testing and feedback from the stakeholders but so far tweaks have been minimal and are not the result of me missing anything. I did not have a huge amount of opportunity to ask the questions I wanted to during this work term as the stakeholders were quite busy and my boss wasn’t confident in the direction that she thought they would take the project as they have been quite wishy washy in the past but in the next term I will have lots more opportunities to work with the stakeholders as they get the opportunity to directly critique my work.</p>
+                </div>
+                <div id="conclusion">
+                    <h2>Conclusion</h2>
+                    <p>In conclusion, I made progress on all of my goals that I am very proud of, and I am excited to move into this next work term as I think it will give me a great opportunity to round out all of the parts of my goals that I didn’t fully get to accomplish this term. </p> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
